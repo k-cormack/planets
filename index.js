@@ -10,11 +10,19 @@ server.use(bp.urlencoded({
 
 
 let galaxyRoutes = require('./routes/galaxies')
+let starRoutes = require('./routes/stars')
+let planetRoutes = require('./routes/planets')
+let moonRoutes = require('./routes/moons')
+let cometRoutes = require('./routes/comets')
 
 
 
 
 server.use('/api/galaxies', galaxyRoutes)
+server.use('/api/stars', starRoutes)
+server.use('/api/planets', planetRoutes)
+server.use('/api/moons', moonRoutes)
+server.use('/api/comets', cometRoutes)
 
 
 server.use('/api/*', (error, req, res, next) => {
