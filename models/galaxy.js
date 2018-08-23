@@ -10,7 +10,7 @@ let schema = new Schema({
   },
   description: {
     type: String,
-    default: 'No Description Choose your own fate!'
+    default: 'No Description Available!'
   }
 })
 
